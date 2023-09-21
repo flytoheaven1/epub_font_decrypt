@@ -5,7 +5,7 @@
 3. dump.py backup -f [원본폰트.ttf] -o [original_font_backup.json]
 4. dump.py backup -f [epub폰트.ttf] -o [epub_font_backup.json]
 5. dump.py dump -std [original_font_backup.json] -cmp [epub_font_backup.json] -c [original_font_cmap.json] -o [dump.json]
-6. dump.py -p [file.txt] -d [dump.json] -o [decrypt.txt]
+6. dump.py decrypt -p [file.txt] -d [dump.json] -o [decrypt.txt]
 
 * 누락된 문자가 있을 경우
 1. 터미널에서 누락된 문자열에 대응하는 10진수 값 확인
