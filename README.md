@@ -8,7 +8,7 @@
 6. font_decrypt.py decrypt -p [file.txt] -d [dump.json] -o [decrypt.txt]
 
 * 매핑 안 된 문자 확인
-- font_decrypt.py rawcmp -c [original_font_cmap.json] -d [dump.json] -o [raw.json]
+1. font_decrypt.py rawcmp -c [original_font_cmap.json] -d [dump.json] -o [raw.json]
 
 * 누락된 문자 복구
 1. decrypt.txt에서 '\10진수값\' 확인
