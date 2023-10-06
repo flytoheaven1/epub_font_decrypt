@@ -11,5 +11,5 @@
 1. font_decrypt.py rawcmp -c [original_font_cmap.json] -d [dump.json] -o [raw.json]
 
 * 누락된 문자 복구
-1. decrypt.txt에서 '\10진수값\' 확인
+1. decrypt.txt에서 "\\10진수값\\" 확인
 2. dump.json 수정 - {"10진수값": "실제문자", ...}
