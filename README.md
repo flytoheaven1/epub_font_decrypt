@@ -7,6 +7,9 @@
 5. font_decrypt.py dump -std [original_font_backup.json] -cmp [epub_font_backup.json] -c [original_font_cmap.json] -o [dump.json]
 6. font_decrypt.py decrypt -p [file.txt] -d [dump.json] -o [decrypt.txt]
 
-* 누락된 문자가 있을 경우
-1. 터미널에서 누락된 문자열에 대응하는 10진수 값 확인
+* 매핑 안 된 문자 확인
+- font_decrypt.py rawcmp -c [original_font_cmap.json] -d [dump.json] -o [raw.json]
+
+* 누락된 문자 복구
+1. decrypt.txt에서 '\10진수값\' 확인
 2. dump.json 수정 - {"10진수값": "실제문자", ...}
